@@ -2,7 +2,7 @@ import React from "react";
 import SearchResultItem from "./SearchResultItem";
 
 const SearchResult = (props) => {
-  const { result} = props;
+  const { result, searchValue } = props;
 
   if (result === null || result.length === 0) 
     return <div className="noresulte">No Matched Result</div>;
@@ -10,7 +10,7 @@ const SearchResult = (props) => {
   return (
     <div className="container">   
       {result.map((item, idx) => (
-        <SearchResultItem key={idx} item={item} />
+        <SearchResultItem key={idx} keyid={idx} item={item} searchValue={searchValue}/>
       ))}
     </div>
   );

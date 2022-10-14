@@ -11,18 +11,18 @@ const Search = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, SetPageSize] = useState(5);
   const [searchValue, SetSearchValue] = useState("tax");
-
   const [taxResult, SetTaxResult] = useState(null);
+  const [jurisdiction, SetJurisdiction] = useState("All");
 
   useEffect(() => {
-    FetchAPI(searchValue, currentPage, pageSize)
+    FetchAPI(searchValue, jurisdiction, currentPage, pageSize)
       .then((response) => response.json())    
       .then((result) => {
         setItemsCount(result.hits.total);
         SetTaxResult(result.hits.hits);    
       })
       .catch((error) => console.log("error", error));
-  }, [searchValue, currentPage, pageSize]);
+  }, [searchValue, jurisdiction, currentPage, pageSize]);
 
 
   const handlePageChange = (page)=>{
@@ -35,22 +35,24 @@ const Search = () => {
       <h1>Search Results</h1>
       <div className="searchBox">
         <SearchBox
-          searchValue={searchValue}
-          SetSearchValue={SetSearchValue} 
-          setCurrentPage={setCurrentPage}    
+          searchValue = {searchValue}
+          SetSearchValue = {SetSearchValue} 
+          setCurrentPage = {setCurrentPage} 
+          jurisdiction = {jurisdiction}  
+          SetJurisdiction = {SetJurisdiction} 
         />
       </div>
       <div>
         <Pagination 
             itemsCount = {itemsCount} 
-            pageSize= {pageSize} 
-            currentPage={currentPage} 
-            onPageChange={handlePageChange}/> 
+            pageSize = {pageSize} 
+            currentPage = {currentPage} 
+            onPageChange = {handlePageChange}/> 
 
       </div>   
       <SearchResult 
-        result= {taxResult} 
-        searchValue={searchValue}/>   
+        result = {taxResult} 
+        searchValue = {searchValue}/>   
 
     </div>
   );
