@@ -1,0 +1,91 @@
+.top-nav_topNav {
+    padding-right: 12vw;
+    position: relative;
+    background: #ddd;
+    text-align: right;
+    z-index: 3;
+}
+
+.main-nav_mainNav {
+    padding-left: 10vw;
+    position: relative;
+    background: #efefef;
+    z-index: 2;
+}
+
+
+.main-nav_logoContainer {
+    display: block;
+    min-width: 180px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    text-indent: -1000px;
+    overflow: hidden; 
+    
+}
+
+.main-nav_logtax {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f27320;
+    text-decoration: none;
+    transition: color .3s linear;
+    cursor: pointer;
+    
+}
+
+.main-nav_lognotes{
+    font-size: 48px;
+    font-weight: 900;
+    color: #005b93;
+    text-decoration: none;
+    transition: color .3s linear;
+    cursor: pointer;
+    
+}
+
+.user-nav_userNav {
+    padding-left: 9vw;
+    z-index: 1;
+    height: 40px;
+    background: #0064a2;    
+    border-bottom: 3px solid #005589;
+    order: 0;
+    margin-bottom: 1rem;
+}
+
+
+.user-nav_date {
+    padding: 0 15px;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 3px solid #005589;
+    color: hsla(0,0%,100%,.75);
+    background-color: #1a73ab;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background .3s;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.header_HeaderMenu {
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s linear;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    color: #0064a2;
+    font-size: 13px;
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+}
+
+.user-nav_date {
+    font-size: 11px;
+    font-family: "Lato",sans-serif;
+    font-weight: 700;
+    margin-top: 0rem;
+}
