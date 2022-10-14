@@ -77,7 +77,8 @@ const SearchBox = ({ searchValue, SetSearchValue, setCurrentPage, jurisdiction, 
                 value = "All"
                 id = "all"  
                 name ="check" 
-                onChange = {(e)=>onlyOne(e)}               
+                defaultChecked
+                onChange = {(e)=>onlyOne(e)}                    
                 />
               <label className = "form-check-label" for = "all">
                 All
