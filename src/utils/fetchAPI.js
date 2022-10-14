@@ -58,7 +58,7 @@ export const FetchAPI = async (
       size: 5,
     },
   });
-  
+
   var requestOptions = {
     method: "POST",
     headers: myHeaders,

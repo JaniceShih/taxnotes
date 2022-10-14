@@ -151,6 +151,16 @@
     outline: none;
 }
 
+.jurisdiction-filter{
+    flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+    .jurisdiction-filter{
+        flex-direction: row;
+    }
+}
+
 .form-jurisdiction{
     margin-right: 0.5rem;    
 }

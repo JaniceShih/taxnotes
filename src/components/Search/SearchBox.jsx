@@ -8,6 +8,7 @@ const SearchBox = ({ searchValue, SetSearchValue, setCurrentPage, jurisdiction, 
   const handleSearch = () => {
     SetSearchValue(inputRef.current.value);
     setCurrentPage(1);
+    // SetJurisdiction("All");
   };
 
   const handleEnter = (e) =>{
@@ -43,7 +44,7 @@ const SearchBox = ({ searchValue, SetSearchValue, setCurrentPage, jurisdiction, 
 
          <div className = "">
           {/* <div>Filter search by jurisdiction: </div> */}
-          <div className = "d-flex justify-content-end">
+          <div className = "jurisdiction-filter d-flex justify-content-end">
             <div className = "form-check-inline">Filter search by jurisdiction: </div>
 
             <div className = "form-check d-flex  form-check-inline">
