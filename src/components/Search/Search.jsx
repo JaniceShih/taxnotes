@@ -31,7 +31,7 @@ const Search = () => {
 
 
   return (  
-    <div  className='results'>   
+    <div className='container results'>   
       <h1>Search Results</h1>
       <div className="searchBox">
         <SearchBox
