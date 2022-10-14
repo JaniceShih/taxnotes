@@ -9,7 +9,7 @@ const Search = () => {
   const [itemsCount, setItemsCount] = useState(0);
   // const [startIndex, setStartIndex] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize, SetPageSize] = useState(5);
+  const [pageSize, SetPageSize] = useState(20);
   const [searchValue, SetSearchValue] = useState("tax");
   const [taxResult, SetTaxResult] = useState(null);
   const [jurisdiction, SetJurisdiction] = useState("All");
@@ -40,6 +40,7 @@ const Search = () => {
           setCurrentPage = {setCurrentPage} 
           jurisdiction = {jurisdiction}  
           SetJurisdiction = {SetJurisdiction} 
+          SetPageSize = {SetPageSize}
         />
       </div>
       <div>
