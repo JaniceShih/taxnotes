@@ -12,7 +12,7 @@ const Search = () => {
   const [pageSize, SetPageSize] = useState(20);
   const [searchValue, SetSearchValue] = useState("tax");
   const [taxResult, SetTaxResult] = useState(null);
-  const [jurisdiction, SetJurisdiction] = useState("All");
+  const [jurisdiction, SetJurisdiction] = useState("Tax Notes Today Federal");
 
   useEffect(() => {
     FetchAPI(searchValue, jurisdiction, currentPage, pageSize)

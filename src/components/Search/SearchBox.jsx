@@ -51,6 +51,19 @@ const SearchBox = ({ searchValue, SetSearchValue, setCurrentPage, jurisdiction, 
            
             <div className = "form-check-inline text-dark">Filter search by jurisdiction: </div>
 
+            <div className = "form-check d-flex  form-check-inline">
+              <input className = "form-check-input" 
+                type = "checkbox" 
+                value = "Tax Notes Today Federal" 
+                id = "federal"  
+                name = "check" 
+                defaultChecked
+                onChange = {(e)=>onlyOne(e)}/>
+              <label className = "form-check-label" for = "federal">
+                  Federal
+              </label>
+            </div>
+
             <div className = "form-check d-flex  form-check-inline ">
               <input className = "form-check-input " 
                 type = "checkbox" 
@@ -66,22 +79,9 @@ const SearchBox = ({ searchValue, SetSearchValue, setCurrentPage, jurisdiction, 
             <div className = "form-check d-flex  form-check-inline">
               <input className = "form-check-input" 
                 type = "checkbox" 
-                value = "Tax Notes Today Federal" 
-                id = "federal"  
-                name = "check" 
-                onChange = {(e)=>onlyOne(e)}/>
-              <label className = "form-check-label" for = "federal">
-                  Federal
-              </label>
-            </div>
-
-            <div className = "form-check d-flex  form-check-inline">
-              <input className = "form-check-input" 
-                type = "checkbox" 
                 value = "All"
                 id = "all"  
-                name ="check" 
-                defaultChecked
+                name ="check"            
                 onChange = {(e)=>onlyOne(e)}                    
                 />
               <label className = "form-check-label" for = "all">

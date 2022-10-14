@@ -6,8 +6,8 @@ const NavBar = () => {
   const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`;
   return (
   <>
-    <div className='top-nav_topNav'> 
-      <a className="header_HeaderMenu" href="https://github.com/JaniceShih/taxnotes.git" target="_target">GitHub</a>
+    <div className='top-nav_topNav header'> 
+      About | Token  | <a className="" href="https://github.com/JaniceShih/taxnotes.git" target="_target">GitHub</a>      
     </div>
     <div className='main-nav_mainNav'> 
       <a href='/'>
