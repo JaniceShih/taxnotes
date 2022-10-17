@@ -18,6 +18,7 @@ const Search = () => {
     FetchAPI(searchValue, jurisdiction, currentPage, pageSize)
       .then((response) => response.json())    
       .then((result) => {
+        console.log(result.hits.hits);
         setItemsCount(result.hits.total);
         SetTaxResult(result.hits.hits);    
       })

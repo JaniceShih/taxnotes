@@ -9,11 +9,10 @@ const HighLight = (props) => {
     let pattern = new RegExp(`${value}`, "gi");
 
     let taxAbstract = document.getElementById(`${abstractId}`);
-    // console.log(title);
+     
 
-    if(taxAbstract){
-        // taxTitle.innerHTML = "test";
-        taxAbstract.innerHTML = taxAbstract.textContent.replace(pattern, match => `<mark class="tnrl-highlight">${match}</mark>`);
+    if(taxAbstract){   
+        taxAbstract.innerHTML = taxAbstract.textContent.replace(pattern, match => `<mark class="tnrl-highlight"> ${match} </mark>`);
     }
   return (
     <>   

@@ -6,7 +6,7 @@ import { RiArrowRightSFill } from 'react-icons/ri';
 const Pagination = (props) => {
   const { itemsCount, pageSize, currentPage, onPageChange} = props;
 
-  const startIdex = (currentPage-1) * pageSize + 1;
+  const startIndex = (currentPage-1) * pageSize + 1;
   const endIndex = (currentPage) * pageSize;
   const pageCount = Math.ceil(itemsCount / pageSize);
  // const pages = _.range(1, pageCount + 1);
@@ -56,7 +56,7 @@ const Pagination = (props) => {
             <a className="page-link" onClick={()=>onPageChange(page)}>{page}</a>
           </li>
         ))} */}
-        {` ${startIdex}-${endIndex} of ${itemsCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} results`}
+        {` ${startIndex}-${endIndex} of ${itemsCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} results`}
         <div className='pagelink d-flex align-items-center '>
           {next}
         </div>
